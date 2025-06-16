@@ -1,8 +1,8 @@
 # CLAP-HMM: A Hybrid Deep Learning and HMM Framework for Gene Prediction
 
-CLAP-HMM（**C**NN-**L**STM-**A**ttention with **P**rotHint and **H**idden **M**arkov **M**odel）是一种集成深度神经网络与传统隐马尔可夫模型的基因结构预测框架，特别适用于植物全基因组的抗性基因预测等任务。
+CLAP-HMM（**C**NN-**L**STM-**A**ttention with **P**rotHint and **H**idden **M**arkov **M**odel）is a gene structure prediction framework integrating deep neural networks and traditional hidden Markov models, and is particularly suitable for tasks such as the prediction of resistance genes in the entire plant genome.
 
-该模型融合了 CNN 提取局部序列特征、BiLSTM 建模长程依赖、注意力机制进行权重增强、ProtHint 提供蛋白质同源支持信息，以及 HMM 精炼边界结构，为基因功能与结构注释提供了一体化解决方案。
+This model integrates CNN for extracting local sequence features, LSTM for modeling long-range dependencies, attention mechanism for weight enhancement, ProtHint for providing protein homology support information, and HMM for prediction, providing an integrated solution for gene function prediction and annotation.
 
 ---
 
