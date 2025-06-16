@@ -127,8 +127,8 @@ feature_vectors = []
 all_labels = []  # 用于存储标签
 
 # 加载抗性和非抗性数据，统一填充为相同的最大长度
-resistant_data, resistant_labels, max_len_resistant = load_data("D:\desktop/2024\CNNLSTM/rseqs156.fna", 1)
-non_resistant_data, non_resistant_labels, _ = load_data("D:\desktop/2024\CNNLSTM/nrseqs39.fna", 0, max_len=max_len_resistant)
+resistant_data, resistant_labels, max_len_resistant = load_data("D:\desktop/2024\CNNLSTM/rseqs.fna", 1)
+non_resistant_data, non_resistant_labels, _ = load_data("D:\desktop/2024\CNNLSTM/nrseqs.fna", 0, max_len=max_len_resistant)
 
 # 将数据转换为 torch 张量并移动到指定设备
 resistant_data = torch.tensor(resistant_data, dtype=torch.float32).permute(0, 2, 1).to(device)
@@ -176,7 +176,7 @@ feature_vectors = np.concatenate(feature_vectors, axis=0)  # 合并特征向量
 all_labels = np.concatenate(all_labels, axis=0)  # 合并标签
 
 # 保存为 .npy 文件
-joblib.dump((feature_vectors, all_labels), 'gene_features_labels_with_attention1.npy')  # 保存特征向量和标签
+joblib.dump((feature_vectors, all_labels), 'gene_features_labels_with_attention.npy')  # 保存特征向量和标签
 
 # 保存为 CSV 文件
 df = pd.DataFrame(feature_vectors)  # 创建 DataFrame
