@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 # 1. 读取CSV文件
-data = pd.read_csv("D:/pythonproject/cnn-lstm/gene_features_labels_with_attention1596.csv", header=None)
+data = pd.read_csv("D:/pythonproject/cnn-lstm/gene_features_labels_with_attention.csv", header=None)
 
 # 将特征和标签分离，假设最后一列为标签
 features = data.iloc[:, :-1].values  # 提取特征列，转换为NumPy数组
@@ -35,4 +35,4 @@ predicted_states = model.predict(features_reduced)
 output_df = pd.DataFrame(predicted_states, columns=['Predicted_State'])
 output_df.to_csv('predicted_gene_resistance1596.csv', index=False)
 
-print("HMM模型已训练完成，预测结果已保存至 'predicted_gene_resistance1596.csv'")
+print("HMM模型已训练完成，预测结果已保存至 'predicted_gene_resistance.csv'")
