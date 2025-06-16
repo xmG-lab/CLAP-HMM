@@ -67,9 +67,9 @@ ProtHint：提供内含子-外显子边界预测信息
 ## 💬 联系与支持
 欢迎提交 Issues 或联系：
 
-📧 your.email@example.com
+📧 Yingfanxx2000@163.com
 
-🧑‍💻 Your GitHub
+🧑‍💻 https://github.com/xmG-lab/CLAP-HMM
 
 ---
 
