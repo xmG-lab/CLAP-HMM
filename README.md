@@ -40,6 +40,8 @@ CLAP-HMM 由三大部分组成：
 
 结构优化模块（HMM）
 
+![figure1](https://github.com/user-attachments/assets/ad16263c-d7e6-4eae-8b85-4dcaffc95577)
+
 ---
 
 ## 📊 示例结果
