@@ -37,3 +37,6 @@ CLAP-HMM/
 ├── requirements.txt              # 所需Python依赖
 ├── README.md                     # 项目说明文档
 └── LICENSE                       # 开源协议
+
+##📄 License
+本项目基于 MIT 开源协议发布，详见 LICENSE 文件。
