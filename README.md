@@ -38,7 +38,7 @@ CLAP-HMM 由三大部分组成：
 
 外源蛋白信息融合模块（ProtHint hints）
 
-结构优化模块（HMM）
+基因功能预测模块（HMM）
 
 ![figure1](https://github.com/user-attachments/assets/ad16263c-d7e6-4eae-8b85-4dcaffc95577)
 
