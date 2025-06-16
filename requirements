@@ -1,1 +1,17 @@
-1
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+torch>=1.10.0
+torchvision>=0.11.0
+torchaudio>=0.10.0
+biopython>=1.79
+scikit-bio>=0.5.7
+PyYAML>=6.0
+easydict>=1.9
+tqdm>=4.62.0
+tensorboard>=2.9.0
+wandb>=0.15.0  # 若使用 wandb 日志（可选）
+captum>=0.6.0  # 可解释性工具，如 DeepLIFT
+packaging>=21.0
