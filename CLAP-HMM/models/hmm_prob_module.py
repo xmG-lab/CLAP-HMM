@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 # 1. 使用 joblib 加载保存的 .npy 文件（实际是 joblib 格式）
-data = joblib.load('gene_features_labels_with_attention195.npy')
+data = joblib.load('gene_features_labels_with_attention.npy')
 
 # 提取特征和标签
 feature_vectors, all_labels = data
@@ -36,6 +36,6 @@ prob_df = pd.DataFrame(predicted_probs, columns=['State_0_Prob', 'State_1_Prob']
 final_df = pd.concat([output_df, prob_df], axis=1)
 
 # 保存结果为 CSV 文件
-final_df.to_csv('predicted_gene_resistance_probabilities_with_joblib195.csv', index=False)
+final_df.to_csv('predicted_gene_resistance_probabilities_with_joblib.csv', index=False)
 
 print("HMM模型已训练完成，预测抗性基因概率已保存至 'predicted_gene_resistance_probabilities_with_joblib.csv'")
